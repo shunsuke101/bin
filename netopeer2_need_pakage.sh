@@ -6,13 +6,19 @@
 set -eu
 
 sudo apt update
-sudo apt install -y build-essential cmake git pkg-config \
+sudo apt install -y build-essential \
+		    cmake \
+		    git \
+		    pkg-config \
 		    libcrypt-dev \
 		    libssh-dev \
 		    libssl-dev \
 		    libcurl4-openssl-dev \
 		    libpcre2-dev libxxhash-dev \
-		    libpam0g-dev
+		    libpam0g-dev \
+		    libsystemd-dev \
+		    libtss2-dev \
+		    tpm2-tools
 
 echo "---- installed versions ----"
 gcc --version | head -1
