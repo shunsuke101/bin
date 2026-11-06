@@ -1,4 +1,3 @@
-
 SSH_DIR=$HOME/.ssh
 
 tpm2_createprimary -C o -c primary.ctx -G rsa2048 -g sha256
