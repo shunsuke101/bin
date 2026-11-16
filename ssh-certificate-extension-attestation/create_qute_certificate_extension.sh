@@ -24,5 +24,5 @@ ssh-keygen -s $SSH_DIR/ca.key -I certificate_test -n lab-student -z 1 \
 	-O extension:quote_msg.b64="$(cat ${TEST_DIR}/quote_msg.b64)"\
 	-O extension:quote_sig.b64="$(cat ${TEST_DIR}/quote_sig.b64)"\
 	-O extension:nonce_bin.b64="$(cat ${TEST_DIR}/nonce_bin.b64)"\
-	-O extension:quote_pcrs.b64"$(cat ${TEST_DIR}/quote_pcrs.b64)"\
+	-O extension:quote_pcrs.b64="$(cat ${TEST_DIR}/quote_pcrs.b64)"\
 	$SSH_DIR/test_cert.pub
